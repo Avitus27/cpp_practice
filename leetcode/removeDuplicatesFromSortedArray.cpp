@@ -14,13 +14,17 @@ public:
         if (len == 1)
             return 1;
         
-
+        // return/index value
         int j = 1;
+        // for each value in the vector, from the second value
         for (int i = 1; i < len; i++)
         {
+            // if a new number is found
             if (nums[i] != nums[i - 1])
             {
+                // set the value at index j to the new number
                 nums[j] = nums[i];
+                // increment index
                 j++;
             }
         }
